@@ -1,0 +1,44 @@
+application: go-alfred
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /sitemap.txt
+  static_files: templates/etc/seo/sitemap.txt
+  upload: templates/etc/seo/sitemap\.txt
+  
+- url: /favicon\.ico
+  static_files: templates/images/favicon.ico
+  upload: templates/images/favicon\.ico  
+  
+- url: /images
+  static_dir: templates/images
+  
+- url: /css
+  static_dir: templates/css
+  
+- url: /js
+  static_dir: templates/js
+  
+- url: /sitemap.txt
+  static_dir: templates/etc/seo
+  
+- url: /new.*
+  script: go-alfred.app
+  login: admin
+  
+- url: /sysadmin.*
+  script: go-alfred.app
+  login: admin
+  
+- url: /.*
+  script: go-alfred.app
+
+libraries:                                                                      
+- name: jinja2                                                                  
+  version: latest
+  
+
+  

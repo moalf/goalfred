@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Alfredo's Site: IT, Programming and The Gospel of Jesus Christ for the whole world..." />
+	<meta name="keywords" content="Microsoft,Google,Citrix,Postini,Exchange,Server,XenServer,Security,Filtering,Vyatta,Florida,Programming,Development,IT,Support,Gospel,Jesus,Bible,Christ,AppEngine,Python,Christian"/>
+	<meta name="msvalidate.01" content="3C8C7E296DB375148107F9145973C45A" />
+	<meta name="google-site-verification" content="Ok0bTlVPp-RJXK2BYoqfLPYpu0_XxylIfzVzOEWUcew" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Alfred! - My Blog</title>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'YOUR_GOOGLE_ANALYTICS_ID']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+
+	<!-- Facebook Plugin Start -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- Facebook Plugin End -->
+	
+	<div id="content">
+		<h1><span class="hr">_</span>Alfred</h1>
+		<ul id="top">
+			<li><a class="current" href="/">Home</a></li>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/personal">Personal</a></li>
+			<li><a href="/contact">Contact</a></li>
+      <li><a href="/archive">Archive</a></li>
+		</ul>
+		
+		<div id="intro">
+			<p>"In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him." - 1 John 4:9,10.</p>
+		</div>
+		<div id="left-2">
+			{% for entry in entries %}
+				<h2><a href="view?id={{ entry.key().id() }}">{{ entry.title }}</a></h2>
+				<h5>By {{ entry.author }} - Published: {{ entry.published }} </h5>
+				<p>{{ entry.content }}</p>
+				<br />
+			{% endfor %}
+			<div ><g:plusone annotation="none"></g:plusone></div>
+			<div class="fb-like" data-href="http://go-alfred.appspot.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+		</div>
+		<div id="footer">
+			<p><img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" /> </p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Alfredo's Site: IT, Programming and The Gospel of Jesus Christ for the whole world..." />
+	<meta name="keywords" content="Microsoft,Google,Citrix,Postini,Exchange,Server,XenServer,Security,Filtering,Vyatta,Florida,Programming,Development,IT,Support,Gospel,Jesus,Bible,Christ,AppEngine,Python,Christian"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+  <script type="text/javascript">
+    function validateForm()
+    {
+			// Validate Name Field is not empty
+			var contact_form_name = document.forms["contactform"]["contact_name"].value;
+			if (contact_form_name == null || contact_form_name == "")
+				{
+				alert("Please, enter your name...");
+				return false;
+				}
+			
+      // Validate Email
+			var x=document.forms["contactform"]["contact_email"].value;
+      var atpos=x.indexOf("@");
+      var dotpos=x.lastIndexOf(".");
+      if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+        {
+        alert("Not a valid e-mail address");
+        return false;
+        }
+			
+			//Validate Comments field is not empty
+			var contact_form_comments = document.forms["contactform"]["contact_comments"].value;
+			if (contact_form_comments == null || contact_form_comments == "")
+				{
+				alert("Please, enter your comments, feedback or question...");
+				return false;
+				}
+				
+				
+			// Validate Verification	
+			var num1 = parseInt(document.forms["contactform"]["value1"].value);
+			var num2 = parseInt(document.forms["contactform"]["value2"].value);
+			var right_answ = num1 + num2;
+			var user_answ = parseInt(document.forms["contactform"]["answer"].value);
+			if (user_answ != right_answ)
+			  {
+				alert("Please, review the operation result...");
+				return false;
+				}
+    }
+  </script>
+
+	<title>Alfred! - My Blog</title>
+</head>
+<body>
+	<div id="content">
+		<h1><span class="hr">_</span>Alfred</h1>
+		<ul id="top">
+			<li><a href="/">Home</a></li>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/personal">Personal</a></li>
+			<li><a class="current" href="/contact">Contact</a></li>
+      <li><a href="/archive">Archive</a></li>
+		</ul>
+		
+		<div id="intro">
+			<p>"I am not ashamed of the gospel of Christ, for it is the power of God to salvation for everyone who believes...  For in it the righteousness of God is revealed from faith for faith." - Romans 1:16</p>
+		</div>
+		<div id="left">
+			
+				<h2>Contact Me</h2>
+ 
+				<p>
+          <form name="contactform" method="post" action="/getcontact" onsubmit="return validateForm();">
+            Name: <input  type="text" name="contact_name" maxlength="60" size="30" class="input" /><br /><br />
+            Email: <input  type="text" name="contact_email" maxlength="60" size="30" class="input" /><br /><br />
+            Comments: <textarea  name="contact_comments" maxlength="1000" cols="60" rows="10" class="input"></textarea><br /><br /><br />
+						Verification: What is the result of this operation? <br /><br />
+						<input type="text" class="input" id="value1" name="value1" value="{{verification_values.num1}}" size=1 /> + <input type="text" class="input" id="value2" name="value2" value="{{verification_values.num2}}" size=1 /> = <input type="text" class="input" id="answer" name="answer" value="" size=2 /><br /><br />
+            <input type="submit" value="Submit" class="button" /><br />
+          </form>
+        </p>
+				<br />
+			
+		</div>
+		<div id="right">    
+		</div>
+    
+    
+		<div id="footer">
+			<p><img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" /></p>
+		</div>
+	</div>
+</body>
+</html>

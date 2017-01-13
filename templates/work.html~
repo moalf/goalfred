@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Alfredo's Site: IT, Programming and The Gospel of Jesus Christ for the whole world..." />
+	<meta name="keywords" content="Microsoft,Google,Citrix,Postini,Exchange,Server,XenServer,Security,Filtering,Vyatta,Florida,Programming,Development,IT,Support,Gospel,Jesus,Bible,Christ,AppEngine,Python,Christian,App,Engine,Help,Desk,Management"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Alfred! - My Blog</title>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31852490-1']);
+		_gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+
+	<!-- Facebook Plugin Start -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- Facebook Plugin End -->
+
+
+	<div id="content">
+		<h1><span class="hr">_</span>Alfred</h1>
+		<ul id="top">
+			<li><a href="/">Home</a></li>
+			<li><a class="current" href="/work">Work</a></li>
+			<li><a href="/personal">Personal</a></li>
+			<li><a href="/contact">Contact</a></li>
+      <li><a href="/archive">Archive</a></li>
+		</ul>
+		
+		<div id="intro">
+			<p>"Therefore, whether you eat or drink, or whatever you do, do all to the glory of God..." - 1 Corinthians 10:31</p>
+		</div>
+		<div id="left">
+			
+				<h2>Skills/Expertise</h2>
+				<h3>IT Support Engineer & Computer Programmer </h3><br />
+        <p>
+	  <img src=images/alfred.png alt="Alfred" align="left" style="margin: 0px 5px"> My name is Alfred. I can fully support and manage your business computer systems. My education is firmly grounded on the understanding of computer science. My work experience includes both a national
+oil company whose computer and IT systems were considered world-class level (SAIC-PDVSA) and also 9 years administering, supporting and troubleshooting computer systems in South Florida, USA.
+
+          I'm continually providing outstanding and professional IT and Computer Systems Deployments, Support and Administration. Among others, the following are some products and technologies that I can confidently work with on behalf of your business goals/projects. Feel free to <a href=/contact>contact me</a> for any remote or freelance work/project/request:
+        </p>  
+				<p>
+          - <a href="http://www.microsoft.com/windowsserver" target="_blank">Microsoft Windows Server</a>, for IT Infrastructure. <br />
+          - <a href="http://www.microsoft.com/exchange" target="_blank">Microsoft Exchange Server</a>, for IT Email Messaging and Collaboration. <br />
+          - <a href="http://www.citrix.com/xenserver" target="_blank">Citrix XenServer</a>, as Virtualization Infrastructure Platform.  <br />
+          - <a href="http://www.google.com/postini/index.html" target="_blank">Google Postini</a>, for Email Filtering and Security. <br />
+          - <a href="http://www.symantec.com" target="_blank">Symantec EndPoint and Backup Exec</a>, for Security and Backup Solutions.<br />
+          - <a href="http://www.vyatta.org" target="_blank">Vyatta</a> Open Source Network OS, for Firewalling, VPN and Routing. <br />
+          - <a href="http://www.ipcop.org" target="_blank">IPCOP</a> Open Source Firewall, for Firewalling and VPN.<br> 
+          - <a href="http://drupal.org" target="_blank">Drupal</a>/<a href="http://wordpress.org" target="_blank">Wordpress</a> for websites development (Content Management Systems).<br />
+          - <a href="http://trixbox.org" target="_blank">Trixbox</a>/<a href="http://elastix.org" target="_blank">Elastix</a> as Open Source IP PBXs Solutions.<br />
+          - <a href="http://www.python.org" target="_blank">Python Programming</a>, for scripting and programming.<br />
+          - <a href="https://developers.google.com/appengine/" target="_blank">Google App Engine</a>, for cloud programming.<br />
+        </p>
+	<br />
+	<h2>IT & Programming Services</h2>
+	<h3>Professional and Affordable Technical Support</h3><br />
+	<p>
+	  - <a href="#">Help Desk</a>: Support for your home/business computer systems problems, including PC, Mac, Linux, Mobile Devices and more.<br />
+	  - <a href="#">Website Development</a>: By using modern Content Management Systems your website will be professionally setup. You can have it with videos, music, blog and more.<br />
+	  - <a href="#">Web Application Programming</a>: As a web developer, I can transform your idea into a web application, collect data, make reports, automate tasks. <br />
+	  - <a href="#">IT Infrastructure Management</a>: Support for your Computer Networks, Servers, Firewalls, VPNs, Switches, Devices and Business Line Applications.<br />
+	  <br />
+	  NOTE: You will be charged via PayPal when the problem/project/request is solved/completed. You have nothing to lose! I'll be here to help.<br />
+	  <br />
+	  You can reach me at 305-523-9001 (Miami, USA). If not available, please leave me a message. Or <a href=/contact>contact me</a> via my website form. I'll get back to you shortly.<br /><br />
+	</p>
+	
+			<div ><g:plusone annotation="none"></g:plusone></div>
+			<div class="fb-like" data-href="http://go-alfred.appspot.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false"></div>
+		</div>
+		<div id="right">
+			<h3>Latest Technical Notes</h3>
+			<ul>
+        {% for entry in entries %}
+          <li><a href="view?id={{ entry.key().id() }}">{{ entry.title }}</a></li>
+        {% endfor %}
+			</ul>	
+		</div>
+		<div id="footer">
+			<p><img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" /></p>
+		</div>
+	</div>
+</body>
+</html>

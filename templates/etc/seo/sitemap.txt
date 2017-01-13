@@ -1,0 +1,5 @@
+http://go-alfred.appspot.com
+http://go-alfred.appspot.com/work
+http://go-alfred.appspot.com/personal
+http://go-alfred.appspot.com/contact
+http://go-alfred.appspot.com/archive

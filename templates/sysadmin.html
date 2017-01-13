@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Alfred! - My Blog</title>
+</head>
+<body>
+	<div id="content">
+		<h1><span class="hr">_</span>Alfred</h1>
+		<ul id="top">
+			<li><a href="/">Home</a></li>
+			<li><a href="/work">Work</a></li>
+			<li><a href="/personal">Personal</a></li>
+			<li><a href="/contact">Contact</a></li>
+      <li><a class="current" href="{{ url }}">{{ url_linktext }}</a></li>
+		</ul>
+		
+		<div id="intro">
+			<p>"In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be pthe propitiation for our sins." - 1 John 4:9,10.</p>
+		</div>
+		<div id="left">
+      <h2>System Administration - Welcome! </h2>
+      <h3><a href="/new">Add New Blog Entry </a></h3><br />
+			{% for entry in entries %}
+				<h4><a href="view?id={{ entry.key().id() }}">{{ entry.title }}</a></h4>
+				<h5>By {{ entry.author }} - Published: {{ entry.published }} </h5><a href="edit?id={{ entry.key().id() }}">EDIT</a> | <a href="del?id={{ entry.key().id() }}">REMOVE</a><br />
+				<br />
+			{% endfor %}
+		</div>
+    <div id="footer">
+			<p><img src="https://developers.google.com/appengine/images/appengine-silver-120x30.gif" alt="Powered by Google App Engine" /></p>
+		</div>
+	</div>
+</body>
+</html>
